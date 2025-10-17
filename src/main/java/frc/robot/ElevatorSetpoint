@@ -1,0 +1,18 @@
+package frc.robot;
+
+public final class ElevatorSetpoint {
+    private double elevator_setpoint;
+    private double angle_setpoint;
+    public ElevatorSetpoint(double elevator, double angle) {
+        elevator_setpoint = elevator;
+        angle_setpoint = angle;
+    }
+
+    public double getElevatorGoal() {
+        return elevator_setpoint;
+    }
+
+    public double getDepositorGoal() {
+        return angle_setpoint;
+    }
+}
